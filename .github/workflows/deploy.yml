@@ -23,20 +23,16 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
-      - name: Create static site directory
+      - name: Create docs directory
         run: |
-          mkdir -p _site
-          cp -r docs/* _site/
-          cp index.html _site/
-          cp -r css _site/
-          cp -r js _site/
-          cp -r img _site/
-          cp -r images _site/
+          mkdir -p docs
+          cp index.html docs/
+          touch docs/.nojekyll
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '_site'
+          path: 'docs'
           
       - name: Deploy to GitHub Pages
         id: deployment
