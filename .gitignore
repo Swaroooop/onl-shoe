@@ -1,0 +1,28 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+
+# Dependency directories
+vendor/
+node_modules/
+
+# Environment variables
+.env
+
+# Temporary files
+tmp/
+temp/
+
+# User uploaded content (optional)
+# uploads/
+# images/user/ 
